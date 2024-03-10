@@ -1,0 +1,9 @@
+<!-- templates/blog/posts.html -->
+
+<h1>Blog Posts</h1>
+<ul>
+    {% for post in blog_posts %}
+    <li>{{ post.title }}</li>
+    <li>{{ post.date_created }}</li>
+    {% endfor %}
+</ul>
