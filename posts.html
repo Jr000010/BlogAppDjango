@@ -3,7 +3,7 @@
 <h1>Blog Posts</h1>
 <ul>
     {% for post in blog_posts %}
-    <li>{{ post.title }}</li>
-    <li>{{ post.created_at }}</li>
+    <strong><h4>{{ post.title }}</h4></strong>
+    <p>{{ post.created_at }}</p>
     {% endfor %}
 </ul>
